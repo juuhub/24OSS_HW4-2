@@ -1,24 +1,10 @@
 .footer{
-    background-color: #000;
-    color: #FFF;
+    background-color: white;
+    color: black;
     text-align: center;
     padding: 10px 0px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
-}
-
-.footer .nav-link {
-  color: #FFF;
-}
-
-.footer .nav-link:hover {
-  color: #FFD700;
-}
-
-.footer p {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #FFF;
 }
 
 .loader {
