@@ -32,3 +32,16 @@
     font-weight: 600;
     text-transform: uppercase;
   }
+  
+  .carousel-item {
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    transform: rotate(5deg);
+  }
+
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: goldenrod;
+  }
