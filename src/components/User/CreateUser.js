@@ -87,12 +87,23 @@ const CreateUser = () => {
         </div>
         <div className="mb-3">
           <label htmlFor="gender" className="form-label">Gender</label>
-          <input type="text" className="form-control" id="gender" name="gender" value={user.gender} onChange={handelInput} />
+          <select
+            className="form-select"
+            id="gender"
+            name="gender"
+            value={user.gender}
+            onChange={handelInput}
+        >
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
           {errors.gender && <p className="error-text">{errors.gender}</p>}
         </div>
         <div className="mb-3">
           <label htmlFor="age" className="form-label">Age</label>
-          <input type="text" className="form-control" id="age" name="age" value={user.age} onChange={handelInput} />
+          <input type="number" className="form-control" id="age" name="age" value={user.age} onChange={handelInput} />
           {errors.age && <p className="error-text">{errors.age}</p>}
         </div>
         <div className="mb-3 mt-3">
