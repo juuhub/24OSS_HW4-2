@@ -38,10 +38,10 @@
   }
   
   .carousel-item.active img {
-    transform: scale(1.3);
+    transform: scale(0.8);
   }
 
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: gold;
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: gray;
   }
