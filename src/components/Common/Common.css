@@ -38,7 +38,7 @@
   }
   
   .carousel-item.active img {
-    transform: scale(0.8);
+    transform: scale(1.2);
   }
 
   .carousel-control-prev-icon:hover,
