@@ -80,6 +80,32 @@ const EditUser = () => {
             onChange={handelInput}
           />
         </div>
+        <div className="mb-3">
+          <label for="gender" className="form-label">
+            Gender
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="gender"
+            gender="gender"
+            value={user.gender}
+            onChange={handelInput}
+          />
+        </div>
+        <div className="mb-3">
+          <label for="age" className="form-label">
+            Age
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="age"
+            age="age"
+            value={user.age}
+            onChange={handelInput}
+          />
+        </div>
         <div className="mb-3 mt-3">
           <label for="email" className="form-label">
             Email
