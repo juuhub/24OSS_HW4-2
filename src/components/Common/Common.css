@@ -41,7 +41,7 @@
     transform: scale(1.3);
   }
 
-  .carousel-control-prev-icon:hover,
-  .carousel-control-next-icon:hover {
-    color: goldenrod;
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: gold;
   }
