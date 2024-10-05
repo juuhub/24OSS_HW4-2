@@ -29,7 +29,7 @@ const CreateUser = () => {
 
     if (!user.name) newErrors.name = "Name is required";
     if (!user.gender) newErrors.gender = "Gender is required";
-    if (!user.age || isNaN(user.age)) newErrors.age = "Valid age is required";
+    if (!user.age < 0) newErrors.age = "Valid age is required";
     if (!user.email || !/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(user.email))
       newErrors.email = "Valid email is required";
     if (!user.phone || !/^\(\d{3}\)\s\d{3}-\d{4}$/.test(user.phone))
@@ -97,7 +97,6 @@ const CreateUser = () => {
             <option value="">Select Gender</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
-            <option value="Other">Other</option>
         </select>
           {errors.gender && <p className="error-text">{errors.gender}</p>}
         </div>
