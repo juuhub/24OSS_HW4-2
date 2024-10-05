@@ -6,6 +6,21 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
 }
+
+.footer .nav-link {
+  color: #FFF;
+}
+
+.footer .nav-link:hover {
+  color: #FFD700;
+}
+
+.footer p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #FFF;
+}
+
 .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
