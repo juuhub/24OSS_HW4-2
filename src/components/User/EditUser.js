@@ -84,24 +84,27 @@ const EditUser = () => {
           <label for="gender" className="form-label">
             Gender
           </label>
-          <input
-            type="text"
-            className="form-control"
+          <select
+            className="form-select"
             id="gender"
-            gender="gender"
+            name="gender"
             value={user.gender}
             onChange={handelInput}
-          />
+          >
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
         </div>
         <div className="mb-3">
           <label for="age" className="form-label">
             Age
           </label>
           <input
-            type="text"
+            type="number"
             className="form-control"
             id="age"
-            age="age"
+            name="age"
             value={user.age}
             onChange={handelInput}
           />
