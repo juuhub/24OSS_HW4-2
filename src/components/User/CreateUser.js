@@ -9,6 +9,8 @@ const CreateUser = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [user, setUser] = useState({
         name: "",
+        gender: "",
+        age: "",
         email: "",
         phone: ""
     })
@@ -35,7 +37,7 @@ const CreateUser = () => {
 
             if (response.ok) {
                 console.log('Form submitted successfully!');
-                setUser({name: "",email: "",phone: ""})
+                setUser({name: "",gender: "",age: "",email: "",phone: ""})
                 navigate('/show-user');
             } else {
                 console.error('Form submission failed!');
@@ -59,6 +61,14 @@ const CreateUser = () => {
                 <div className="mb-3">
                     <label for="name" className="form-label">Name</label>
                     <input type="text" className="form-control" id="name" name="name" value={user.name} onChange={handelInput} />
+                </div>
+                <div className="mb-3">
+                    <label for="gender" className="form-label">Gender</label>
+                    <input type="text" className="form-control" id="gender" name="gender" value={user.gender} onChange={handelInput} />
+                </div>
+                <div className="mb-3">
+                    <label for="age" className="form-label">Age</label>
+                    <input type="text" className="form-control" id="age" name="age" value={user.age} onChange={handelInput} />
                 </div>
                 <div className="mb-3 mt-3">
                     <label for="email" className="form-label">Email</label>

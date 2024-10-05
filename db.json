@@ -2,39 +2,43 @@
   "user": [
     {
       "name": "John",
+      "gender": "Male",
+      "age": 26,
       "email": "john@example.com",
       "phone": "(555) 555-1234",
       "id": "1"
     },
     {
       "name": "Mary",
+      "gender": "Female",
+      "age": 32,
       "email": "\tmary@example.com",
       "phone": "(555) 555-1234",
       "id": "2"
     },
     {
       "name": "Dooley",
+      "gender": "Male",
+      "age": 18,
       "email": "july@example.com",
       "phone": "(555) 555-8521",
       "id": "3"
     },
     {
       "name": "Moe",
+      "gender": "Feale",
+      "age": 22,
       "email": "Moe@example.com",
       "phone": "(555) 555-7410",
       "id": "4"
     },
     {
       "name": "Doe",
+      "gender": "Male",
+      "age": 41,
       "email": "Doe@example.com",
       "phone": "(555) 555-7896",
       "id": "5"
-    },
-    {
-      "id": "44f1",
-      "name": "James",
-      "email": "james123@gmail.com",
-      "phone": "(555) 555-1234"
     }
   ]
 }
