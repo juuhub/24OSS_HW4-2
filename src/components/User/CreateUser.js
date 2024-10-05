@@ -16,16 +16,14 @@ const CreateUser = () => {
     phone: ""
   });
 
-  const [errors, setErrors] = useState({}); // 유효성 검사 결과를 저장할 상태
+  const [errors, setErrors] = useState({});
 
-  // 입력값을 처리하는 핸들러
   const handelInput = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
     setUser({ ...user, [name]: value });
   };
 
-  // 유효성 검사 함수
   const validateForm = () => {
     const newErrors = {};
 
@@ -34,19 +32,18 @@ const CreateUser = () => {
     if (!user.age || isNaN(user.age)) newErrors.age = "Valid age is required";
     if (!user.email || !/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(user.email))
       newErrors.email = "Valid email is required";
-    if (!user.phone || !/^\d{10,}$/.test(user.phone)) // 최소 10자리 숫자만 허용
+    if (!user.phone || !/^\d{10,}$/.test(user.phone))
       newErrors.phone = "Valid phone number is required";
 
     return newErrors;
   };
 
-  // 제출 핸들러
   const handelSubmit = async (event) => {
     event.preventDefault();
 
-    const formErrors = validateForm(); // 유효성 검사 실행
+    const formErrors = validateForm();
     if (Object.keys(formErrors).length > 0) {
-      setErrors(formErrors); // 에러가 있으면 표시
+      setErrors(formErrors);
       return;
     }
 
@@ -86,7 +83,7 @@ const CreateUser = () => {
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>
           <input type="text" className="form-control" id="name" name="name" value={user.name} onChange={handelInput} />
-          {errors.name && <p className="error-text">{errors.name}</p>} {/* 에러 메시지 표시 */}
+          {errors.name && <p className="error-text">{errors.name}</p>}
         </div>
         <div className="mb-3">
           <label htmlFor="gender" className="form-label">Gender</label>
