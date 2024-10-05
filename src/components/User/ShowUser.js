@@ -55,6 +55,8 @@ const ShowUser = () => {
             <tr>
               <th>ID</th>
               <th>Name</th>
+              <th>Gender</th>
+              <th>Age</th>
               <th>Email</th>
               <th>Phone</th>
               <th>Actions</th>
@@ -66,6 +68,8 @@ const ShowUser = () => {
                 <tr key={i + 1}>
                   <td>{i + 1}</td>
                   <td>{item.name}</td>
+                  <td>{item.gender}</td>
+                  <td>{item.age}</td>
                   <td>{item.email}</td>
                   <td>{item.phone}</td>
                   <td>
