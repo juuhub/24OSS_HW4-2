@@ -32,8 +32,8 @@ const CreateUser = () => {
     if (!user.age || isNaN(user.age)) newErrors.age = "Valid age is required";
     if (!user.email || !/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(user.email))
       newErrors.email = "Valid email is required";
-    if (!user.phone || !/^\d{10,}$/.test(user.phone))
-      newErrors.phone = "Valid phone number is required";
+    if (!user.phone || !/^\(\d{3}\)\s\d{3}-\d{4}$/.test(user.phone))
+        newErrors.phone = "Valid phone number is required in format (555) 123-4567";
 
     return newErrors;
   };
