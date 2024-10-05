@@ -3,7 +3,12 @@ import React from "react";
 const Carasol = () => {
   return (
     <>
-      <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div
+        id="demo"
+        className="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
         <div className="carousel-indicators">
           <button
             type="button"
@@ -28,21 +33,21 @@ const Carasol = () => {
             <img
               src={'https://www.w3schools.com/bootstrap5/la.jpg'}
               alt="Los Angeles"
-              className="d-block"
+              className="d-block w-100"
             />
           </div>
           <div className="carousel-item">
             <img
               src={'https://www.w3schools.com/bootstrap5/ny.jpg'}
-              alt="Chicago"
-              className="d-block"
+              alt="New York"
+              className="d-block w-100"
             />
           </div>
           <div className="carousel-item">
             <img
               src={'https://www.w3schools.com/bootstrap5/chicago.jpg'}
-              alt="New York"
-              className="d-block"
+              alt="Chicago"
+              className="d-block w-100"
             />
           </div>
         </div>
